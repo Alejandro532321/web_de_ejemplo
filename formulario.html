@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/estiloo.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Mi primera web de lenguaje de marcas</h1>
+            <h2>Menu</h2>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="horario.html">Horario</a>
+                <a href="formulario.html">Formulario</a>
+            </nav>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>
+                        <h2>Formulario de Contacto</h2>
+                    <p>
+                        <label for="nombre">Nombre*</label>
+                    </p>
+                    <p> 
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+                    <p>
+                        <label for="apellido">Apellido*</label>
+                    </p>
+                    <p>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </p>
+                    <p>
+                        <label for="email">Email*</label>
+                    </p>
+                    <p>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="buscar">Buscar:</label>
+                    </p>
+                    <p>
+                        <input type="search" id="buscar" name="buscar">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Fechas y horas</legend>
+                    <p>
+                        <label for="fecha">Fecha:</label>
+                    </p>
+                    <p>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+                    <p>
+                        <label for="hora">Hora:</label>
+                    </p>
+                    <p>
+                        <input type="time" id="hora" name="hora">
+                    </p>
+                    <p>
+                        <label for="Mes">Mes:</label>
+                    </p>
+                    <p>
+                        <input type="month" id="mes" name="mes">
+                    </p>
+                    <p>
+                        <label for="semana">Semana:</label>
+                    </p>
+                    <p>
+                        <input type="week" id="semana" name="semana">
+                    </p>
+                </fieldset>
+                <>
+                    <legend>Valores numéricos</legend>
+                    <p>
+                        <label for="Edad">Edad:</label>
+                    </p>
+                    <p>
+                        <input type="number" id="edad" name="edad" min="0" max="100">
+                    </p>
+                    <p>
+                        <label for="Nivel">Nivel:</label>
+                    </p>
+                    <p>
+                        <input type="range" id="nivel" name="nivel" min="1" max="10">
+                    </p>
+                    <p>
+                        <label type="color" id="color" name="color">Color favorito:</label>
+                    </p>
+                    <p>
+                        <input type="color" id="color" name="color">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Opciones</legend>
+                    <p>
+                        Selecciona una opción:
+                    </p>
+                    <p>
+                        <input type="radio" id="opción 1" name="opción 1" value="1">
+                        <label for="Opción 1">Opción 1</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="opción 2" name="opción 2" value="2">
+                        <label for="Opción 2">Opción 2</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="opción 3" name="opción 3" value="3">
+                        <label for="Opción 3">Opción 3</label>
+                    </p>
+                    <p>
+                        Aficiones:
+                    </p>
+                    <p>
+                        <input type="checkbox" id="afición 1" name="afición 1" value="1">
+                        <label for="Afición 1">Informática</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="afición 2" name="afición 2" value="2">
+                        <label for="Afición 2">Deportes</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="afición 3" name="afición 3" value="3">
+                        <label for="Afición 3">Música</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <Legend>Listas</Legend>
+                    <p>
+                        <label for="Provincia">Provincia:</label>
+                        <select id="Provincia" name="Provincia">
+                            <option value>Selecciona una provincia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Cádiz">Cádiz</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Estudios">Estudios:</label>
+                        <select id="Estudios" name="Estudios">
+                            <option value="Selecciona un estudio">Selecciona un estudio</option>
+                            <optgroup label="Secundaria">
+                                <option value="ESO">ESO</option>
+                                <option value="Bachillerato">Bachillerato</option>
+                            </optgroup>
+                            <optgroup label="Formación Profesional">
+                                <option value="Grado Medio">Grado Medio</option>
+                                <option value="Grado Superior">Grado Superior</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="Lenguajes favoritos">Lenguajes favoritos:</label>
+                        <select id="Lenguajes favoritos" name="Lenguajes favoritos" multiple size"6">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                        </select>
+                    </p>
+                <fieldset>
+                    <legend>Texto</legend>
+                    <p>
+                        Comentarios:
+                    </p>
+                    <p>
+                        <textarea id="comentarios" name="comentarios" rows="3" cols="50"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros elementos</legend>
+                    <p>
+                        <label for="archivo">Selecciona un archivo:</label>
+                        <input type="file" id="archivo" name="archivo">
+                    </p>
+                   <p>
+                        <label for="navegador">Navegador:</label>
+                         
+                   </p>
+                    
+                <fieldset>
+                    <legend>Botones</legend>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Borrar formulario">
+                </fieldset>
+            </form>
+        </main>
+    <footer>
+        <p>CIFP Virgen de Gracia</p>
+    </footer>
+    </body>
+</html>

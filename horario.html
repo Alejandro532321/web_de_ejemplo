@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<HEAD>
+	<meta charset="UTF-8">
+    <title>Horario</title>
+	<link rel="stylesheet" href="css/estiloo.css">
+</HEAD>
+
+<body>
+	<header>
+		<p>Mi primera web de lenguaje de marcas</p>
+		<p>Alejandro De La Fuente Fernández</p>
+		<nav>
+		<a href="index.html">Volver al index</a>
+		<a href="horario.html">Inicio</a>
+		<a href="formulario.html">Formulario</a>
+		</nav>
+	</header>
+
+	 	<main>
+        	<h2>Horario semanal</h2>
+    
+
+	<table border="3">
+		<thead>
+			<tr>
+				<th></th>
+				<td style="text-align: center;">Lunes</td>
+				<td style="text-align: center;">Martes</td>
+				<td style="text-align: center;">Miércoles</td>
+				<td style="text-align: center;">Jueves</td>
+				<td style="text-align: center;">Viernes</td>
+			</tr>
+		</thead>
+		<tbody>
+			<!--1º hora-->
+			<tr>
+				<td style="text-align: center;">8:30 - 9:25</td>
+				<td class="ENT" rowspan="2" style="text-align: center;">ENDES</td>
+				<td class="DIG" rowspan="2" style="text-align: center;">DASP</td>
+				<td class="SIS" rowspan="2" style="text-align: center;">SISIN</td>
+				<td class="BAS" rowspan="2" style="text-align: center;">BDD</td>
+				<td class="ING" style="text-align: center;">IPCGS</td>
+			</tr>
+			<tr>
+			<!--2º hora-->
+				<td style="text-align: center;">9:25 - 10:20</td>
+				<!--Lunes ya está cubierto por el rowspan de arriba-->
+				<!--Martes ya está cubierto por el rowspan de arriba-->
+				<!--Miércoles ya está cubierto por el rowspan de arriba-->
+				<!--Jueves ya está cubierto por el rowspan de arriba-->
+				<td class="SIS" style="text-align: center;">SISIN</th>
+			</tr>
+			<!--3º hora-->
+			<tr>
+				<td style="text-align: center;">10:20 - 11:15</td>
+				<td class="SIS" style="text-align: center;">SISIN</td>
+				<td class="PROG" style="text-align: center;">PROG</td>
+				<td class="SOS" style="text-align: center;">SASP</td>
+				<td class="PROG" style="text-align: center;">PROG</td>
+				<td class="BAS" style="text-align: center;">BDD</td>
+			</tr>
+			<!--RECREO-->
+			<tr>
+				<td style="text-align: center;">11:15 - 11:45</td>
+				<td colspan="6" style="text-align:center;">RECREO</td>
+			</tr>
+			<!--4º hora-->
+			<tr>
+				<td style="text-align: center;">11:45 - 12:40</td>
+				<td class="LEN" style="text-align: center;">LMSGI</td>
+				<td class="PROG" style="text-align: center;">PROG</td>
+				<td class="LEN" style="text-align: center;">LMSGI</td>
+				<td class="PROG" style="text-align: center;">PROG</td>
+				<td class="BAS" style="text-align: center;">BDD</td>
+			</tr>
+			<!--5º hora-->
+			<tr>
+				<td style="text-align: center;">12:40 - 13:35</th>
+				<td class="IP" rowspan="2" style="text-align: center;">IPE-I</td>
+				<td class="IP" style="text-align: center;">IPE-I</td>
+				<td class="ING" style="text-align: center;">IPCGS</td>
+				<td class="LEN" style="text-align: center;">LMSGI</td>
+				<td class="PROG" rowspan="2" style="text-align: center;">PROG</td>
+			</tr>
+			<!--6º hora-->
+			<tr>
+				<td style="text-align: center;">13:35 - 14:30</td>
+				<td class="BAS" style="text-align: center;">BDD</td>
+				<td class="PROY" style="text-align: center;">PIMDA</td>
+				<td class="SIS" style="text-align: center;">SISIN</td>
+			</tr>
+		</tbody>
+	</table>
+	</main>
+	<footer>
+		<p>CIFP Virgen de gracia</p>
+		<p>Contacto</p>
+	</footer>
+	
+</body>
+</html>
