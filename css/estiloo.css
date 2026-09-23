@@ -33,3 +33,185 @@ td, th {
 .LEN {
     background-color: #d10b0b;
 }
+
+/* Reseteo general y fuentes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabecera y Navegación */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #bdc3c7;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #34495e;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+}
+
+/* Contenido Principal y Formulario */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+legend h2 {
+    font-size: 1.2rem;
+    display: inline;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #444;
+}
+
+/* Campos de entrada, selects y textareas */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Controles específicos */
+input[type="color"] {
+    height: 40px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}

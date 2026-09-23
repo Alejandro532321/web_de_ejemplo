@@ -20,8 +20,7 @@
         <main>
             <form>
                 <fieldset>
-                    <legend>
-                        <h2>Formulario de Contacto</h2>
+                    <legend><h2>Formulario de Contacto</h2></legend>
                     <p>
                         <label for="nombre">Nombre*</label>
                     </p>
@@ -47,6 +46,7 @@
                         <input type="search" id="buscar" name="buscar">
                     </p>
                 </fieldset>
+
                 <fieldset>
                     <legend>Fechas y horas</legend>
                     <p>
@@ -62,7 +62,7 @@
                         <input type="time" id="hora" name="hora">
                     </p>
                     <p>
-                        <label for="Mes">Mes:</label>
+                        <label for="mes">Mes:</label>
                     </p>
                     <p>
                         <input type="month" id="mes" name="mes">
@@ -74,66 +74,65 @@
                         <input type="week" id="semana" name="semana">
                     </p>
                 </fieldset>
-                <>
+
+                <fieldset>
                     <legend>Valores numéricos</legend>
                     <p>
-                        <label for="Edad">Edad:</label>
+                        <label for="edad">Edad:</label>
                     </p>
                     <p>
                         <input type="number" id="edad" name="edad" min="0" max="100">
                     </p>
                     <p>
-                        <label for="Nivel">Nivel:</label>
+                        <label for="nivel">Nivel:</label>
                     </p>
                     <p>
                         <input type="range" id="nivel" name="nivel" min="1" max="10">
                     </p>
                     <p>
-                        <label type="color" id="color" name="color">Color favorito:</label>
+                        <label for="color_fav">Color favorito:</label>
                     </p>
                     <p>
-                        <input type="color" id="color" name="color">
+                        <input type="color" id="color_fav" name="color_fav">
                     </p>
                 </fieldset>
+
                 <fieldset>
                     <legend>Opciones</legend>
+                    <p>Selecciona una opción:</p>
                     <p>
-                        Selecciona una opción:
+                        <input type="radio" id="opcion1" name="opcion" value="1">
+                        <label for="opcion1">Opción 1</label>
                     </p>
                     <p>
-                        <input type="radio" id="opción 1" name="opción 1" value="1">
-                        <label for="Opción 1">Opción 1</label>
+                        <input type="radio" id="opcion2" name="opcion" value="2">
+                        <label for="opcion2">Opción 2</label>
                     </p>
                     <p>
-                        <input type="radio" id="opción 2" name="opción 2" value="2">
-                        <label for="Opción 2">Opción 2</label>
+                        <input type="radio" id="opcion3" name="opcion" value="3">
+                        <label for="opcion3">Opción 3</label>
+                    </p>
+                    <p>Aficiones:</p>
+                    <p>
+                        <input type="checkbox" id="aficion1" name="aficion1" value="1">
+                        <label for="aficion1">Informática</label>
                     </p>
                     <p>
-                        <input type="radio" id="opción 3" name="opción 3" value="3">
-                        <label for="Opción 3">Opción 3</label>
+                        <input type="checkbox" id="aficion2" name="aficion2" value="2">
+                        <label for="aficion2">Deportes</label>
                     </p>
                     <p>
-                        Aficiones:
-                    </p>
-                    <p>
-                        <input type="checkbox" id="afición 1" name="afición 1" value="1">
-                        <label for="Afición 1">Informática</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="afición 2" name="afición 2" value="2">
-                        <label for="Afición 2">Deportes</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="afición 3" name="afición 3" value="3">
-                        <label for="Afición 3">Música</label>
+                        <input type="checkbox" id="aficion3" name="aficion3" value="3">
+                        <label for="aficion3">Música</label>
                     </p>
                 </fieldset>
+
                 <fieldset>
-                    <Legend>Listas</Legend>
+                    <legend>Listas</legend>
                     <p>
                         <label for="Provincia">Provincia:</label>
                         <select id="Provincia" name="Provincia">
-                            <option value>Selecciona una provincia</option>
+                            <option value="">Selecciona una provincia</option>
                             <option value="Sevilla">Sevilla</option>
                             <option value="Huelva">Huelva</option>
                             <option value="Cádiz">Cádiz</option>
@@ -142,7 +141,7 @@
                     <p>
                         <label for="Estudios">Estudios:</label>
                         <select id="Estudios" name="Estudios">
-                            <option value="Selecciona un estudio">Selecciona un estudio</option>
+                            <option value="">Selecciona un estudio</option>
                             <optgroup label="Secundaria">
                                 <option value="ESO">ESO</option>
                                 <option value="Bachillerato">Bachillerato</option>
@@ -154,8 +153,8 @@
                         </select>
                     </p>
                     <p>
-                        <label for="Lenguajes favoritos">Lenguajes favoritos:</label>
-                        <select id="Lenguajes favoritos" name="Lenguajes favoritos" multiple size"6">
+                        <label for="lenguajes_favoritos">Lenguajes favoritos:</label>
+                        <select id="lenguajes_favoritos" name="lenguajes_favoritos" multiple size="6">
                             <option value="HTML">HTML</option>
                             <option value="CSS">CSS</option>
                             <option value="JavaScript">JavaScript</option>
@@ -164,25 +163,28 @@
                             <option value="Java">Java</option>
                         </select>
                     </p>
+                </fieldset>
+
                 <fieldset>
                     <legend>Texto</legend>
-                    <p>
-                        Comentarios:
-                    </p>
+                    <p>Comentarios:</p>
                     <p>
                         <textarea id="comentarios" name="comentarios" rows="3" cols="50"></textarea>
+                    </p>
                 </fieldset>
+
                 <fieldset>
                     <legend>Otros elementos</legend>
                     <p>
                         <label for="archivo">Selecciona un archivo:</label>
                         <input type="file" id="archivo" name="archivo">
                     </p>
-                   <p>
+                    <p>
                         <label for="navegador">Navegador:</label>
-                         
-                   </p>
-                    
+                        <input type="text" id="navegador" name="navegador">
+                    </p>
+                </fieldset>
+
                 <fieldset>
                     <legend>Botones</legend>
                     <input type="submit" value="Enviar formulario">
@@ -190,8 +192,9 @@
                 </fieldset>
             </form>
         </main>
-    <footer>
-        <p>CIFP Virgen de Gracia</p>
-    </footer>
+
+        <footer>
+            <p>CIFP Virgen de Gracia</p>
+        </footer>
     </body>
 </html>
