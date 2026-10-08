@@ -1,9 +1,46 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    box-sizing: border-box;
+
+    
+    background-image: url('../img/flor.png');
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 20px;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+
+main {
+    flex: 1; 
+}
+
+
+footer {
+    width: auto;
+    margin-top: 20px; 
+    
+   
+    margin-left: -20px;      
+    margin-right: -20px;     
+    margin-bottom: -20px;    
+}
+
+
+.seccion-capitulo {
+    background-color: #4a90e2; 
+    color: black;              
+    border: 1px solid black;   
+    padding: 15px;             
+}
+
 
 .flor {
     display: block;         

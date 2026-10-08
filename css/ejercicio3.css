@@ -1,0 +1,54 @@
+table {
+    border: 2px solid #0000ff; /* Borde azul exterior */
+    border-spacing: 10px;      /* Espacio entre los bordes de las celdas */
+    padding: 10px;             /* Margen interno para que no pegue al borde */
+    margin: 0 auto;            /* Centra la tabla en la pantalla */
+}
+
+/* Estilo para las celdas (tanto encabezados como normales) */
+.col{
+    border: 2px solid #0000ff; /* Borde azul para cada recuadro interno */
+    padding: 15px;             /* Espacio interior para que el texto respire */
+    text-align: center;        /* Centra los textos de las celdas */
+    font-family: sans-serif;
+}
+
+.col2{
+    border: 2px solid #0000ff; /* Borde azul para cada recuadro interno */
+    padding: 15px;             /* Espacio interior para que el texto respire */
+    text-align: left;          /* Alinea los textos de las celdas a la izquierda */
+    font-family: sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+/* Configuración general solo para la tabla dos */
+#tabla-dos {
+    border-collapse: collapse; /* Une los bordes eliminando huecos */
+    border: none;              /* Elimina el borde azul exterior heredado */
+    margin: 0 auto;            
+    font-family: sans-serif;   
+}
+
+/* Bordes dorados solo para las celdas de la tabla dos */
+#tabla-dos td {
+    border: 2px solid #d4af37; /* Borde dorado/amarillo oscuro */
+    padding: 20px 30px;         
+    text-align: center;         
+}
+
+/* Colores de fondo específicos para la tabla dos */
+#tabla-dos .col1, 
+#tabla-dos .col3, 
+#tabla-dos .col4 {
+    background-color: #e0e0e0; /* Fondo gris claro */
+    color: black;
+}
+
+#tabla-dos .col5,
+#tabla-dos .col6 {
+    background-color: #92c83e; /* Fondo verde manzana */
+    color: black;
+}
