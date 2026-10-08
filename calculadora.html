@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="css/calculadora.css">
+        <script src="js/calculador.js"></script>
+    </head>
+
+<body>
+    <header>
+        <h1>Calculadora</h1>
+        <h2>Menu</h2>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+        </nav>
+    </header>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="pantalla" readonly>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><button onclick="escribir(7)">7</button></td>
+                    <td><button onclick="escribir(8)">8</button></td>
+                    <td><button onclick="escribir(9)">9</button></td>
+                    <td><button onclick="escribir('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir(4)">4</button></td>
+                    <td><button onclick="escribir(5)">5</button></td>
+                    <td><button onclick="escribir(6)">6</button></td>
+                    <td><button onclick="escribir('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir(1)">1</button></td>
+                    <td><button onclick="escribir(2)">2</button></td>
+                    <td><button onclick="escribir(3)">3</button></td>
+                    <td><button onclick="escribir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir(0)">0</button></td>
+                    <td><button onclick="escribir('.')">.</button></td>
+                    <td><button onclick="resolver()">=</button></td>
+                    <td><button onclick="escribir('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><button onclick="borrar()">C</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    <footer>
+        <p>CIFP VIRGEN DE GRACIA</p>
+    </footer>
+</body>

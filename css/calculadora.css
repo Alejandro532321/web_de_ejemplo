@@ -1,0 +1,129 @@
+/* Reset general y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+/* Encabezado y Navegación */
+header {
+    width: 100%;
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+header h2 {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+/* Estructura de la Calculadora */
+table {
+    background-color: #22272e;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: auto 0;
+}
+
+/* Pantalla de la Calculadora */
+#pantalla {
+    width: 100%;
+    height: 60px;
+    background-color: #1c2128;
+    color: #58a6ff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 15px;
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #adbac7;
+    background-color: #2d333b;
+    border: 1px solid #444c56;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: #373e47;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Estilo especial para el botón Clear (C) */
+td[colspan="4"] button {
+    width: 100%;
+    background-color: #da3633;
+    color: white;
+    border-color: #f85149;
+}
+
+td[colspan="4"] button:hover {
+    background-color: #f85149;
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

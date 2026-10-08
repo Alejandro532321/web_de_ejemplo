@@ -1,0 +1,27 @@
+.h2 {
+    color:red;
+    font-style:italic;
+}
+
+.cuaderno   {
+    text-align:center;
+    padding: 20px;
+}
+
+.parrafo    {
+    font-size: 30px;
+    font-family: verdana;
+}
+
+.subrayar   {
+    text-decoration: underline;
+}
+
+.negrita    {
+    font-weight: bolder;
+}
+
+.vinculo    {
+    background-color: grey;
+    border-color: blue;
+}
