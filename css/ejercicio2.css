@@ -91,3 +91,24 @@ pre {
     font-size: 18px;
     color: #000;
 }
+
+nav {
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}

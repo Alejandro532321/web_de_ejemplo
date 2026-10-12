@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Listas HTML</title>
+        <link rel="stylesheet" href="css/Ejercicio2.1.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Volver al inicio</a>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="contenedor-lista">
+                <h2 class="titulo-lista">lista no ordenada</h2>
+                <ul class="lista-no-ordenada">
+                    <li>opcion1</li>
+                    <li>opcion2
+                        <ul>
+                            <li>opcion21</li>
+                            <li>opcion22</li>
+                        </ul>
+                    </li>
+                    <li>opcion3</li>
+                    <li>opcion4</li>
+                    <li>opcion5</li>
+                </ul>
+            </div>
+
+            <div class="contenedor-lista">
+                <h2 class="titulo-lista">lista ordenada</h2>
+                <ol class="lista-ordenada-nivel1">
+                    <li>opcion1</li>
+                    <li>opcion2
+                        <ul class="sublista-cuadrados">
+                            <li>opcion21</li>
+                            <li>opcion22</li>
+                        </ul>
+                    </li>
+                    <li>opcion3</li>
+                    <li>opcion4
+                        <ol class="lista-ordenada-nivel2">
+                            <li>opcion41
+                                <ol class="lista-ordenada-nivel3">
+                                    <li>opcion411</li>
+                                    <li>opcion412</li>
+                                </ol>
+                            </li>
+                            <li>opcion42</li>
+                        </ol>
+                    </li>
+                    <li>opcion5</li>
+                </ol>
+            </div>
+        </main>
+    </body>
+</html>

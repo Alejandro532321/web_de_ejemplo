@@ -1,4 +1,4 @@
-/* Reset básico y fuente general */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ body {
     padding-bottom: 40px;
 }
 
-/* Barra de navegación superior */
+
 nav {
     background-color: #1e293b;
     padding: 1rem 2rem;
@@ -35,7 +35,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Estilos del menú desplegable (Tema 3) */
+
 .desplegable {
     position: relative;
     display: inline-block;
@@ -86,7 +86,7 @@ nav a:hover {
     display: block;
 }
 
-/* Encabezados y contenido principal */
+
 h1 {
     font-size: 2.2rem;
     color: #0f172a;
@@ -104,13 +104,13 @@ p {
     font-size: 1.1rem;
 }
 
-/* Enlaces del texto */
+
 p a {
     color: #0284c7;
     font-weight: 600;
 }
 
-/* Lista de módulos de DAM */
+
 ul {
     background-color: #ffffff;
     margin: 10px 20px 20px 20px;
@@ -127,7 +127,7 @@ li {
     color: #475569;
 }
 
-/* Imagen de ejemplo */
+
 img {
     margin: 10px 20px;
     max-width: 500px;
@@ -135,4 +135,11 @@ img {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    background-color: #1407a3;
+    padding: 1em;
+    color:white;
+    text-align: center;
 }
