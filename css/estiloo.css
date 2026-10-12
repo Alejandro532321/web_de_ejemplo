@@ -30,10 +30,6 @@ td, th {
     text-align: right;
 }
 
-.LEN {
-    background-color: #d10b0b;
-}
-
 /* Reseteo general y fuentes */
 * {
     box-sizing: border-box;
