@@ -1,0 +1,127 @@
+/* Configuración general y tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal del juego */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Títulos y textos */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+nav a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de botones de juego */
+div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 6px rgba(52, 152, 219, 0.3);
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(52, 152, 219, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Marcador de puntuación */
+p[id^="partidas"], 
+#marcador, 
+#ganadas, 
+#empatadas, 
+#perdidas {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 4px solid #bdc3c7;
+    text-align: left;
+}
+
+#ganadas { border-left-color: #2ecc71; }
+#perdidas { border-left-color: #e74c3c; }
+#empatadas { border-left-color: #f1c40f; }
+
+/* Contenedor de resultados */
+#resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #edf2f7;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+#resultado h2 {
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+#jugada-jugador, #jugada-maquina {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 6px 0;
+}
+
+/* El veredicto final */
+#mensaje-resultado {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 15px;
+    padding: 5px;
+}
