@@ -1,1 +1,3 @@
-alert("Hola Mundo! \nQué fácil es incluir \'comillas simples\' \ny \"comillas dobles\"")
+var mensaje="Hola Mundo! \nQué fácil es incluir \'comillas simples\' \ny \"comillas dobles\"";
+
+alert(mensaje);
