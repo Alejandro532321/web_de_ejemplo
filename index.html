@@ -9,30 +9,36 @@
 
   <body>
     <header>
-      <nav>
-        <a href="horario.html">Horario</a>
-        <a href="formulario.html">Formulario</a>
-        <a href="index.html">Inicio</a>
+  <h1>Mi primera web</h1>
+  <nav>
+    <ul class="menu-principal">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="horario.html">Horario</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      
+      <!-- Menú desplegable para Tema 3 -->
+      <li class="dropdown">
+        <a href="#" class="drop-btn">Tema 3 ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="juego.html">Juego piedra, papel o tijera</a></li>
+        </ul>
+      </li>
 
-        <div class="desplegable">
-          <button class="boton-desplegable">Tema 3</button>
-          <div class="contenido-desplegable">
-            <a href="calculadora.html">Calculadora</a>
-            <a href="juego.html">Juego piedra, papel o tijera</a>
-          </div>
-        </div>
-        <div class="desplegable">
-          <button class="boton-desplegable">Actividades</button>
-          <div class="contenido-desplegable">
-            <a href="Ejercicio1.html">Ejercicio 1</a>
-            <a href="Ejercicio2.html">Ejercicio 2</a>
-            <a href="Ejercicio3.html">Ejercicio 3</a>
-            <a href="Ejercicio2.1.html">Ejercicio 2.1</a>
-            <a href="Ejercicio2.2.html">Ejercicio 2.2</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <!-- Menú desplegable para Actividades -->
+      <li class="dropdown">
+        <a href="#" class="drop-btn">Actividades ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="Ejercicio1.html">Ejercicio 1</a></li>
+          <li><a href="Ejercicio2.html">Ejercicio 2</a></li>
+          <li><a href="Ejercicio3.html">Ejercicio 3</a></li>
+          <li><a href="Ejercicio2.1.html">Ejercicio 2.1</a></li>
+          <li><a href="Ejercicio2.2.html">Ejercicio 2.2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
 
     <main>
       <h1>Esta es mi primera web</h1>
