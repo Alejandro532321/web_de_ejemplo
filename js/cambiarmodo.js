@@ -1,5 +1,4 @@
 
-
 function cambiamodo() {
     alert("Se cambia el color de la web");
 
