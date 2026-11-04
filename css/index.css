@@ -1,21 +1,22 @@
-
 /* ==========================================================================
-   1. VARIABLES Y RESET GLOBAL
+   1. VARIABLES DE DISEÑO MODERNO (TEMA VIBRANTE Y VISUAL)
    ========================================================================== */
 :root {
-  --bg-body: #f1f5f9;
-  --bg-card: #ffffff;
-  --text-main: #1e293b;
-  --text-muted: #64748b;
-  --primary: #2563eb;
+  --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --primary: #3b82f6;
   --primary-hover: #1d4ed8;
-  --header-bg: #0f172a; /* Fondo oscuro elegante para la barra superior */
-  --accent-color: #38bdf8; /* Azul claro para los enlaces del menú */
-  --border-color: #e2e8f0;
-  --radius: 12px;
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  --transition: all 0.25s ease-in-out;
+  --accent-glow: rgba(59, 130, 246, 0.3);
+  --header-bg: #0f172a;
+  --nav-link-color: #38bdf8;
+  --border-color: #cbd5e1;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 20px 35px -10px rgba(59, 130, 246, 0.15);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -26,48 +27,71 @@
 
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background-color: var(--bg-body);
+  background: var(--bg-gradient);
   color: var(--text-main);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-bottom: 40px;
+  animation: fadeInBody 0.5s ease-in-out;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================
-   2. ENCABEZADO Y BARRA DE NAVEGACIÓN SUPERIOR (ESTILO OSCURO MEJORADO)
+   2. ENCABEZADO Y NAVEGACIÓN SUPERIOR LLAMATIVA
    ========================================================================== */
 header {
   background-color: var(--header-bg);
   width: 100%;
-  padding: 16px 32px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 14px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid rgba(56, 189, 248, 0.2);
 }
 
 header h1 {
   color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #ffffff, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header h2 {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+header p {
+  color: var(--nav-link-color);
+  margin-bottom: 0;
+  font-size: 0.9rem;
 }
 
 nav {
   width: 100%;
 }
 
-/* Menú principal en línea */
-.menu-principal {
+/* Menú principal y enlaces sueltos convertidos en botones atractivos */
+.menu-principal, header nav {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -75,24 +99,30 @@ nav {
   position: relative;
 }
 
-/* Enlaces del menú superior */
-.menu-principal a {
-  color: var(--accent-color);
+/* Estilo unificado para los enlaces del menú superior */
+.menu-principal a, header nav a {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
-  padding: 6px 0;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
   transition: var(--transition);
-  display: block;
+  display: inline-block;
 }
 
-.menu-principal > li > a:hover {
+.menu-principal a:hover, header nav a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
   color: #ffffff;
-  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 15px var(--accent-glow);
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
-   MENÚS DESPLEGABLES (DROPDOWNS) - SOLUCIÓN DEFINITIVA DE ESTABILIDAD
+   3. MENÚS DESPLEGABLES (DROPDOWNS) - ULTRA FLUIDOS
    ========================================================================== */
 .dropdown {
   position: relative;
@@ -105,73 +135,86 @@ nav {
   top: 100%;
   left: 0;
   background-color: #ffffff;
-  min-width: 220px;
-  box-shadow: var(--shadow-lg);
-  border-radius: 8px;
+  min-width: 230px;
+  box-shadow: var(--shadow-hover);
+  border-radius: var(--radius-md);
   list-style: none;
   padding: 8px 0;
-  margin-top: 8px; /* Espacio visual elegante */
+  margin-top: 10px;
   border: 1px solid var(--border-color);
   z-index: 1100;
-  animation: fadeIn 0.15s ease-in-out;
+  animation: slideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* PUENTE INVISIBLE (Crea un área táctil continua entre el texto y el desplegable) */
 .dropdown-content::before {
   content: "";
   position: absolute;
-  top: -12px; /* Sube hasta solapar con el enlace superior */
+  top: -14px;
   left: 0;
   width: 100%;
-  height: 12px; /* Cubre todo el hueco transparente */
+  height: 14px;
   background: transparent;
 }
 
-/* Estilos de los enlaces dentro del desplegable */
 .dropdown-content li a {
   color: var(--text-main);
-  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  padding: 10px 18px;
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 500;
   display: block;
   transition: var(--transition);
+  border-radius: 0;
 }
 
 .dropdown-content li a:hover {
-  background-color: #f8fafc;
+  background-color: #eff6ff;
   color: var(--primary);
-  padding-left: 20px;
+  padding-left: 24px;
+  box-shadow: none;
+  transform: none;
 }
 
-/* Mantener desplegado al estar encima del botón O del propio menú/puente */
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover {
   display: block;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 /* ==========================================================================
-   4. CONTENEDOR PRINCIPAL (ESTILO TARJETA MODERNA)
+   4. CONTENEDOR PRINCIPAL (ESTILO TARJETA ELEGANTE)
    ========================================================================== */
 main {
   background-color: var(--bg-card);
+  backdrop-filter: blur(10px);
   width: 90%;
-  max-width: 1000px;
-  margin: 32px auto;
-  padding: 40px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
+  max-width: 1050px;
+  margin: 40px auto;
+  padding: 45px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   flex: 1;
 }
 
+h1 {
+  font-size: 2.2rem;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
 h2 {
-  font-size: 1.5rem;
-  color: var(--header-bg);
+  font-size: 1.4rem;
+  color: var(--text-main);
   margin-bottom: 12px;
+  font-weight: 700;
 }
 
 p {
@@ -179,36 +222,254 @@ p {
   color: var(--text-muted);
 }
 
-/* Listas generales dentro del contenido */
+/* Listas estilizadas */
 main ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin-bottom: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
 }
 
 main ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+main ul li::before {
+  content: "•";
+  position: absolute;
+  left: 6px;
+  color: var(--primary);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* Imágenes con marco moderno */
+img, .cuaderno {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+img:hover {
+  transform: scale(1.01);
+}
+
+/* ==========================================================================
+   5. TABLAS (HORARIOS, CALCULADORA Y GENERALES)
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 24px 0;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-color);
+}
+
+th, td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+thead th, thead td {
+  background-color: var(--header-bg);
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+/* Fila de recreo destacada */
+table td[colspan="6"] {
+  background-color: #fef9c3;
+  font-weight: bold;
+  color: #a16207;
+  letter-spacing: 1px;
+}
+
+/* Pantalla de la calculadora */
+table #pantalla {
+  width: 100%;
+  height: 60px;
+  font-size: 1.8rem;
+  text-align: right;
+  padding: 10px 16px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: #f8fafc;
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+/* Botones de calculadora y juegos */
+table button, main div > button {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  background-color: #f1f5f9;
+  color: var(--text-main);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+table button:hover, main div > button:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px var(--accent-glow);
+}
+
+/* ==========================================================================
+   6. JUEGO PIEDRA, PAPEL O TIJERA
+   ========================================================================== */
+main div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+main div > button {
+  width: auto;
+  flex: 1;
+  min-width: 120px;
+  background: var(--primary);
+  color: white;
+}
+
+#resultado {
+  background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+  border: 1px solid #bfdbfe;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  margin-top: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+#resultado h2 {
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   7. FORMULARIOS MODERNOS
+   ========================================================================== */
+fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 25px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+legend {
+  font-weight: 700;
+  color: var(--primary);
+  padding: 0 12px;
+  font-size: 1.1rem;
+}
+
+label {
+  display: inline-block;
+  font-weight: 600;
   margin-bottom: 6px;
   color: var(--text-main);
 }
 
-/* Imágenes estilizadas */
-img, .cuaderno {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
   border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  margin-top: 6px;
+  background-color: #f8fafc;
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: var(--transition);
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+input[type="reset"] {
+  background-color: #ef4444;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
 }
 
 /* ==========================================================================
-   5. PIE DE PÁGINA (FOOTER)
+   8. PIE DE PÁGINA (FOOTER)
    ========================================================================== */
 footer {
   background-color: var(--header-bg);
   color: #94a3b8;
   text-align: center;
-  padding: 20px;
-  font-size: 0.85rem;
+  padding: 24px;
+  font-size: 0.9rem;
   width: 100%;
   margin-top: auto;
+  border-top: 2px solid rgba(56, 189, 248, 0.2);
+}
+
+footer p {
+  color: #94a3b8;
+  margin-bottom: 4px;
 }
