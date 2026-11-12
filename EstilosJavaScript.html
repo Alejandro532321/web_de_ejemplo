@@ -11,12 +11,56 @@
   </head>
   <body>
     <header>
-      <h1>Bienvenido a mi WEB</h1>
+      <h1>Mi primera web</h1>
+      <nav>
+        <ul class="menu-principal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="formulario.html">Formulario</a></li>
+
+          <!-- Menú desplegable para Tema 3 -->
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Tema 3 ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="juego.html">Juego piedra, papel o tijera</a></li>
+              <li><a href="EstilosJavaScript.html">Botón claro / oscuro</a></li>
+            </ul>
+          </li>
+
+          <!-- Menú desplegable para Actividades -->
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Actividades ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="Ejercicio1.html">Ejercicio 1</a></li>
+              <li><a href="Ejercicio2.html">Ejercicio 2</a></li>
+              <li><a href="Ejercicio3.html">Ejercicio 3</a></li>
+              <li><a href="Ejercicio2.1.html">Ejercicio 2.1</a></li>
+              <li><a href="Ejercicio2.2.html">Ejercicio 2.2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
     <hr />
     <main>
-      <button onclick="cambiamodo()">Cambiar modo claro / oscuro</button>
+      <h2>Panel de Control Visual</h2>
+      <p id="texto-principal">
+        Pulsa los botones de abajo para personalizar la apariencia o añadir
+        contenido nuevo a la web.
+      </p>
+
+      <div>
+        <button onclick="cambiamodo()">🌓 Cambiar modo claro / oscuro</button>
+        <button onclick="cambiarTamano()">
+          🔍 Aumentar / Normalizar texto
+        </button>
+        <button onclick="agregarTarjeta()">✨ Añadir mensaje visual</button>
+      </div>
+
+      <div id="contenedor-mensajes"></div>
     </main>
+
     <hr />
     <footer>
       <p>Creado por Alejandro</p>

@@ -1,7 +1,36 @@
-body{
-    background-color: black;
+:root {
+  --bg-gradient: #000000;
+  --bg-card: #1e293b;
+  --text-main: #ffffff;
+  --text-muted: #cbd5e1;
 }
 
-header, footer, main{
-    color:white
+body {
+  background: black;
+}
+
+header, footer, main {
+  color: white;
+}
+
+/* Contenedor y diseño de las tarjetas dinámicas */
+#contenedor-mensajes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tarjeta-dinamica {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid var(--primary);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  animation: slideDown 0.3s ease-out;
+}
+
+.tarjeta-dinamica p {
+  margin: 0;
+  color: var(--text-main);
+  font-weight: 500;
 }
