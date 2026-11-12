@@ -1,41 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ejercicio 2.2: Menús</title>
-        <link rel="stylesheet" href="css/Ejercicio2.2.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html">Volver al inicio</a>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 2.2: Menús</title>
+    <link rel="stylesheet" href="css/Ejercicio2.2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi primera web</h1>
+      <nav>
+        <ul class="menu-principal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="formulario.html">Formulario</a></li>
 
-        <main>
+          <!-- Menú desplegable para Tema 3 -->
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Tema 3 ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="juego.html">Juego piedra, papel o tijera</a></li>
+            </ul>
+          </li>
 
-            <div class="seccion-menu">
-                <h3 class="titulo-menu">lista no ordenada -&gt; menu horizontal</h3>
-                <ul class="menu-horizontal">
-                    <li><a href="#">opcion1</a></li>
-                    <li><a href="#">opcion2</a></li>
-                    <li><a href="#">opcion3</a></li>
-                    <li><a href="#">opcion4</a></li>
-                    <li><a href="#">opcion5</a></li>
-                </ul>
-            </div>
+          <!-- Menú desplegable para Actividades -->
+          <li class="dropdown">
+            <a href="#" class="drop-btn">Actividades ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="Ejercicio1.html">Ejercicio 1</a></li>
+              <li><a href="Ejercicio2.html">Ejercicio 2</a></li>
+              <li><a href="Ejercicio3.html">Ejercicio 3</a></li>
+              <li><a href="Ejercicio2.1.html">Ejercicio 2.1</a></li>
+              <li><a href="Ejercicio2.2.html">Ejercicio 2.2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-            
-            <div class="seccion-menu">
-                <h3 class="titulo-menu">lista no ordenada -&gt; menu vertical</h3>
-                <ul class="menu-vertical">
-                    <li><a href="#">opcion1</a></li>
-                    <li><a href="#">opcion2</a></li>
-                    <li class="activo"><a href="#">opcion3</a></li>
-                    <li><a href="#">opcion4</a></li>
-                    <li><a href="#">opcion5</a></li>
-                </ul>
-            </div>
-        </main>
-    </body>
+    <main>
+      <div class="seccion-menu">
+        <h3>lista no ordenada -&gt; menu horizontal</h3>
+        <ul class="menu-horizontal">
+          <li><a href="#">opcion1</a></li>
+          <li><a href="#">opcion2</a></li>
+          <li><a href="#">opcion3</a></li>
+          <li><a href="#">opcion4</a></li>
+          <li><a href="#">opcion5</a></li>
+        </ul>
+
+        <hr />
+
+        <h3>lista no ordenada -&gt; menu vertical</h3>
+        <ul class="menu-vertical">
+          <li><a href="#">opcion1</a></li>
+          <li><a href="#">opcion2</a></li>
+          <li><a href="#" class="activo">opcion3</a></li>
+          <li><a href="#">opcion4</a></li>
+          <li><a href="#">opcion5</a></li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>

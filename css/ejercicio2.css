@@ -190,8 +190,17 @@ nav {
    4. CONTENEDOR PRINCIPAL (ESTILO TARJETA ELEGANTE)
    ========================================================================== */
 main {
-  background-color: var(--bg-card);
-  backdrop-filter: blur(10px);
+  /* Capa blanca al 85% de opacidad encima de la foto para que el texto sea legible */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("../img/flor.png");
+  
+  /* Ajustes para que la imagen cubra todo el recuadro sin deformarse */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Tus estilos originales del recuadro */
   width: 90%;
   max-width: 1050px;
   margin: 40px auto;
@@ -201,6 +210,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.8);
   flex: 1;
 }
+
 
 h1 {
   font-size: 2.2rem;
