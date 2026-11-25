@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empleados>
+    <empleado id="101">
+        <nombre>Laura</nombre>
+        <apellido>Maetínez</apellido>
+        <edad>28</edad>
+        <departamento>Desarrollo</departamento>
+        <cargo>Analista</cargo>
+    </empleado>
+    <empleado id="102">
+        <nombre>Carlos</nombre>
+        <apellido>Gómez</apellido>
+        <edad>35</edad>
+        <departamento>Marketing</departamento>
+        <cargo>Coordinador</cargo>
+    </empleado>
+</empleados>
