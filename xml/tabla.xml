@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tabla>
+    <linea id="1">
+        <fecha>41934</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Pepe</comprador>
+        <unidades>5</unidades>
+        <importe>5,50</importe>
+    </linea>
+    <linea id="2">
+        <fecha>41895</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Ana</comprador>
+        <unidades>11</unidades>
+        <importe>12,10</importe>
+    </linea>
+    <linea id="3">
+        <fecha>41744</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Pepe</comprador>
+        <unidades>1</unidades>
+        <importe>1,10</importe>
+    </linea>
+    <linea id="4">
+        <fecha>41931</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Ana</comprador>
+        <unidades>3</unidades>
+        <importe>3,30</importe>
+    </linea>
+    <linea id="5">
+        <fecha>41864</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Pepe</comprador>
+        <unidades>11</unidades>
+        <importe>12,10</importe>
+    </linea>
+    <linea id="6">
+        <fecha>41994</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Ana</comprador>
+        <unidades>5</unidades>
+        <importe>5,50</importe>
+    </linea>
+    <linea id="7">
+        <fecha>41960</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Pepe</comprador>
+        <unidades>13</unidades>
+        <importe>14,30</importe>
+    </linea>
+    <linea id="8">
+        <fecha>41716</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Ana</comprador>
+        <unidades>5</unidades>
+        <importe>5,50</importe>
+    </linea>
+    <linea id="9">
+        <fecha>41743</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Pepe</comprador>
+        <unidades>11</unidades>
+        <importe>12,10</importe>
+    </linea>
+    <linea id="10">
+        <fecha>41924</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Ana</comprador>
+        <unidades>15</unidades>
+        <importe>16,50</importe>
+    </linea>
+    <linea id="11">
+        <fecha>41972</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Pepe</comprador>
+        <unidades>2</unidades>
+        <importe>2,20</importe>
+    </linea>
+    <linea id="12">
+        <fecha>41803</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Ana</comprador>
+        <unidades>15</unidades>
+        <importe>16,50</importe>
+    </linea>
+</tabla>
